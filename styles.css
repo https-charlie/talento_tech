@@ -1,0 +1,309 @@
+/* Estilos generales del cuerpo */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Roboto como fuente principal */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Un color de fondo suave para toda la página */
+    color: #333; /* Color de texto principal */
+}
+
+/* Estilos del Header */
+header {
+    background-color: #333; /* Color de fondo oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif; /* Montserrat para encabezados */
+}
+
+/* Estilos de la Navegación */
+nav {
+    background-color: #444; /* Un gris un poco más claro que el header */
+    padding: 0.5rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline; /* Coloca los elementos de la lista en línea */
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff; /* Texto blanco para los enlaces */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Estilos del Main y Sections */
+main {
+    padding: 20px;
+    max-width: 1200px; /* Limita el ancho máximo del contenido principal */
+    margin: 20px auto; /* Centra el contenido principal */
+    background-color: #fff; /* Fondo blanco para el contenido */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Una sombra sutil */
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee; /* Línea divisoria entre secciones */
+}
+
+section:last-child {
+    border-bottom: none; /* No poner borde en la última sección */
+}
+
+section h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+/* Estilos del Footer */
+footer {
+    background-color: #333; /* Mismo color que el header */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+}
+
+/* Estilos básicos para el formulario de contacto */
+#formulario-contacto div {
+    margin-bottom: 15px;
+}
+
+#formulario-contacto label {
+    display: block; /* Hace que la etiqueta ocupe toda la línea */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#formulario-contacto input[type="text"],
+#formulario-contacto input[type="email"],
+#formulario-contacto textarea {
+    width: 100%; /* Ocupan todo el ancho disponible */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Para que el padding no aumente el tamaño total */
+}
+
+#formulario-contacto button[type="submit"] {
+    background-color: #5cb85c; /* Un color verde para el botón */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#formulario-contacto button[type="submit"]:hover {
+    background-color: #4cae4c; /* Verde un poco más oscuro al pasar el mouse */
+}
+
+/* Propiedad de background aplicada en una sección (ejemplo en la sección de inicio) */
+#inicio {
+    /* Ejemplo con un color de fondo */
+    /* background-color: #e2f3f5; */
+
+    /* Ejemplo con una imagen de fondo (asegúrate de tener una imagen 'background-image.jpg' en tu carpeta) */
+    /* background-image: url('background-image.jpg'); */
+    /* background-size: cover; */ /* Cubre toda la sección */
+    /* background-position: center; */ /* Centra la imagen */
+    /* color: #fff; */ /* Puede que necesites cambiar el color del texto si la imagen es oscura */
+
+    /* Ejemplo con un degradado lineal */
+    background-image: linear-gradient(to right, #6dd5ed, #2193b0);
+    color: #fff; /* Texto blanco para que contraste con el degradado */
+    border-radius: 8px; /* Bordes redondeados para la sección */
+}
+
+#inicio h2, #inicio p {
+    color: #fff; /* Asegura que el texto dentro de esta sección sea blanco */
+}
+
+/* Estilos para la sección de Productos con Flexbox */
+.productos-container {
+    display: flex; /* Activa Flexbox */
+    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea si no caben */
+    gap: 20px; /* Espacio entre las cards */
+    justify-content: center; /* Centra las cards si hay espacio extra */
+}
+
+.producto-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px; /* Ancho fijo para cada card, o usa flex-basis */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    display: flex; /* Hacemos la card un contenedor flex también */
+    flex-direction: column; /* Alineamos los elementos internos verticalmente */
+    text-align: center;
+}
+
+.producto-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.producto-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.producto-card p {
+    font-size: 0.9rem;
+    color: #666;
+    flex-grow: 1; /* Hace que el párrafo ocupe el espacio disponible, empujando el botón hacia abajo */
+    margin-bottom: 15px;
+}
+
+.btn-comprar {
+    display: inline-block;
+    background-color: #007bff; /* Un azul atractivo */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.btn-comprar:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Para hacer las cards responsivas en pantallas más pequeñas con Flexbox */
+@media (max-width: 768px) {
+    .producto-card {
+        width: calc(50% - 10px); /* Dos cards por fila, restando la mitad del gap */
+    }
+}
+
+@media (max-width: 480px) {
+    .producto-card {
+        width: 100%; /* Una card por fila */
+    }
+}
+
+/* Estilos para la sección de Reseñas con Grid */
+.resenas-container {
+    display: grid; /* Activa Grid */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Columnas responsivas */
+    gap: 20px; /* Espacio entre las celdas del grid */
+}
+
+.resena-card {
+    background-color: #f9f9f9;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.resena-card h4 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.resena-card p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.estrellas {
+    color: #f0ad4e; /* Color amarillo para las estrellas */
+    font-size: 1.2rem;
+}
+
+/* Ejemplo de cómo destacar una reseña específica usando Grid */
+.resena-destacada {
+    background-color: #e7f3fe; /* Un fondo azul claro */
+    border-left: 5px solid #007bff;
+    /* Para que ocupe más espacio si quisiéramos */
+    /* grid-column: span 2;  Ocuparía dos columnas si hay espacio */
+    /* grid-row: span 2; Ocuparía dos filas si hay espacio */
+}
+
+/* En styles.css, al final de todo o en una sección de Media Queries */
+
+/* Media Queries para responsividad general */
+
+/* Para tablets y dispositivos más pequeños */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* Hacer el título principal un poco más pequeño */
+    }
+
+    nav ul li {
+        display: block; /* Hacer que los enlaces de navegación se apilen verticalmente */
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    #contacto {
+        padding: 15px;
+    }
+
+    #formulario-contacto input[type="text"],
+    #formulario-contacto input[type="email"],
+    #formulario-contacto textarea {
+        padding: 12px; /* Ajustar padding si es necesario */
+    }
+}
+
+/* Para teléfonos móviles */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    /* Puedes añadir más ajustes específicos para móviles aquí */
+    /* Por ejemplo, si el formulario tuviera elementos lado a lado en escritorio,
+       aquí los pondrías uno debajo del otro. */
+    /* Ejemplo:
+    .algun-contenedor-del-formulario {
+        flex-direction: column;
+    }
+    */
+}
+
+/* En styles.css */
+img.responsiva { /* O aplica a todas las imágenes de una sección */
+    max-width: 100%;
+    height: auto;
+    display: block; /* Para evitar espacio extra debajo de la imagen */
+    margin: 10px 0; /* Espacio opcional */
+}

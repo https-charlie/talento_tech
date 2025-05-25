@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi Proyecto de Clase</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <header>
+        <h1>Proyecto Talento Tech</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#resenas">Reseñas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido/a</h2>
+            <p>Esta es la sección principal de mi página. ¡Espero que te guste!</p>
+            </section>
+
+        <section id="productos">
+            <h2>Nuestros Productos</h2>
+            <div class="productos-container">
+                <article class="producto-card">
+                    <img src="img/ps5.jpg" alt="Producto 1">
+                    <h3>PlayStation 5</h3>
+                    <p>Potente consola de nueva generación con SSD ultrarrápido y experiencias inmersivas gracias a su mando DualSense.</p>
+                    <a href="#" class="btn-comprar">Ver más</a>
+                </article>
+                <article class="producto-card">
+                    <img src="img/xbox_s.jpg" alt="Producto 2">
+                    <h3>Xbox S</h3>
+                    <p>La Xbox más pequeña y elegante, totalmente digital, que ofrece velocidad y rendimiento de nueva generación a un precio accesible.</p>
+                    <a href="#" class="btn-comprar">Ver más</a>
+                </article>
+                <article class="producto-card">
+                    <img src="img/Nintendo_Switch_2.jpg" alt="Producto 3">
+                    <h3>Nintendo Switch 2</h3>
+                    <p>La esperada sucesora de la popular consola híbrida de Nintendo, que se lanzará el 5 de junio de 2025, prometiendo mejoras en hardware y gráficos.</p>
+                    <a href="#" class="btn-comprar">Ver más</a>
+                </article>
+                </div>
+        </section>
+        <section id="resenas">
+            <h2>Reseñas de Clientes</h2>
+            <div class="resenas-container">
+                <div class="resena-card">
+                    <h4>Juan Pérez</h4>
+                    <p>"¡Excelente servicio y productos de alta calidad! Muy recomendable."</p>
+                    <div class="estrellas">★★★★★</div>
+                </div>
+                <div class="resena-card">
+                    <h4>Maria Gómez</h4>
+                    <p>"Me encantó la atención al cliente. Resolvieron todas mis dudas rápidamente."</p>
+                    <div class="estrellas">★★★★☆</div>
+                </div>
+                <div class="resena-card resena-destacada">
+                    <h4>Carlos López</h4>
+                    <p>"Una experiencia de compra increíble. Los productos superaron mis expectativas. Definitivamente volveré a comprar."</p>
+                    <div class="estrellas">★★★★★</div>
+                </div>
+                <div class="resena-card">
+                    <h4>Ana Torres</h4>
+                    <p>"Buenos precios y envío rápido. ¡Sigan así!"</p>
+                    <div class="estrellas">★★★★☆</div>
+                </div>
+            </div>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="formulario-contacto" action="https://formspree.io/f/mblovypl" method="POST">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tu Nombre - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
