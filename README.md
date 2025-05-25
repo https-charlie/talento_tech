@@ -17,7 +17,7 @@ El propósito de esta página es demostrar la comprensión y aplicación de:
 
 ## Vista Previa
 
-(Opcional: Puedes añadir un enlace a tu sitio una vez desplegado o una captura de pantalla)
+(https://https-charlie.github.io/talento_tech/#)
 
 ## Autor
 
