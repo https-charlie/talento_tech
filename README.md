@@ -21,4 +21,4 @@ El propósito de esta página es demostrar la comprensión y aplicación de:
 
 ## Autor
 
-- [Tu Nombre]
+- Carlos Martinez
