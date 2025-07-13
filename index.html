@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mi Proyecto de Clase</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto de Clase | Talento Tech</title>
+    <meta name="description" content="Página de venta de consolas de videojuegos y accesorios. Encuentra los mejores productos de nueva generación.">
+    <meta name="keywords" content="gaming, consolas, videojuegos, PlayStation, Xbox, Nintendo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
 <body>
     <header>
-        <h1>Proyecto Talento Tech</h1>
+        <h1>Smart Tech</h1>
     </header>
     <nav>
         <ul>
@@ -19,38 +22,20 @@
             <li><a href="#productos">Productos</a></li>
             <li><a href="#resenas">Reseñas</a></li>
             <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#carrito-seccion" id="ver-carrito">Carrito (<span id="carrito-contador">0</span>)</a></li>
         </ul>
     </nav>
 
     <main>
         <section id="inicio">
-            <h2>Bienvenido/a</h2>
-            <p>Esta es la sección principal de mi página. ¡Espero que te guste!</p>
-            </section>
+            <h2>Bienvenidos a Smart Tech</h2>
+        </section>
 
         <section id="productos">
             <h2>Nuestros Productos</h2>
-            <div class="productos-container">
-                <article class="producto-card">
-                    <img src="img/ps5.jpg" alt="Producto 1">
-                    <h3>PlayStation 5</h3>
-                    <p>Potente consola de nueva generación con SSD ultrarrápido y experiencias inmersivas gracias a su mando DualSense.</p>
-                    <a href="#" class="btn-comprar">Ver más</a>
-                </article>
-                <article class="producto-card">
-                    <img src="img/xbox_s.jpg" alt="Producto 2">
-                    <h3>Xbox S</h3>
-                    <p>La Xbox más pequeña y elegante, totalmente digital, que ofrece velocidad y rendimiento de nueva generación a un precio accesible.</p>
-                    <a href="#" class="btn-comprar">Ver más</a>
-                </article>
-                <article class="producto-card">
-                    <img src="img/Nintendo_Switch_2.jpg" alt="Producto 3">
-                    <h3>Nintendo Switch 2</h3>
-                    <p>La esperada sucesora de la popular consola híbrida de Nintendo, que se lanzará el 5 de junio de 2025, prometiendo mejoras en hardware y gráficos.</p>
-                    <a href="#" class="btn-comprar">Ver más</a>
-                </article>
-                </div>
+            <div id="productos-container" class="productos-container"></div>
         </section>
+
         <section id="resenas">
             <h2>Reseñas de Clientes</h2>
             <div class="resenas-container">
@@ -76,6 +61,16 @@
                 </div>
             </div>
         </section>
+
+        <section id="carrito-seccion" style="display:none;">
+            <h2>Carrito de Compras</h2>
+            <div id="carrito-container">
+                </div>
+            <p>Total: $<span id="carrito-total">0.00</span></p>
+            <button id="vaciar-carrito">Vaciar Carrito</button>
+        </section>
+
+
         <section id="contacto">
             <h2>Contacto</h2>
             <form id="formulario-contacto" action="https://formspree.io/f/mblovypl" method="POST">
@@ -91,13 +86,14 @@
                     <label for="mensaje">Mensaje:</label>
                     <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
                 </div>
+                <p id="form-mensaje" style="color:red;"></p>
                 <button type="submit">Enviar Mensaje</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Tu Nombre - Todos los derechos reservados.</p>
+        <p>&copy; 2025 Smart Tech - Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
