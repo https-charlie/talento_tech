@@ -1,6 +1,6 @@
 # Proyecto de Clase - Página Web Básica
 
-Este es un proyecto desarrollado para la clase de [Nombre de tu Clase o Materia].
+Este es un proyecto desarrollado para la clase de Talento Tech.
 El propósito de esta página es demostrar la comprensión y aplicación de:
 
 - Estructura semántica de HTML5.
@@ -8,6 +8,7 @@ El propósito de esta página es demostrar la comprensión y aplicación de:
 - Diseño responsivo utilizando Flexbox y Grid.
 - Integración de un formulario de contacto funcional con Formspree.
 - Inclusión de contenido multimedia.
+- Carrito de compra
 
 ## Tecnologías Utilizadas
 
